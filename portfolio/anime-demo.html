@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <!-- SEO -->
+  <title>
+    Anime Streaming Dashboard | Live Demo
+  </title>
+  <meta
+    name="description"
+    content="Interactive anime streaming dashboard featuring anime discovery, filtering, search functionality, responsive layouts, and accessibility support."
+  />
+  <!-- GOOGLE FONT -->
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <!-- CSS -->
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  />
+</head>
+<body>
+  <!-- SKIP LINK -->
+  <a
+    href="#main-content"
+    class="skip-link"
+  >
+    Skip to main content
+  </a>
+  <!-- =========================
+  HEADER
+  ========================= -->
+  <header role="banner">
+    <div class="container header-wrapper">
+      <h1>
+        Anime Dashboard
+      </h1>
+      <nav aria-label="Primary Navigation">
+        <ul>
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="projects.html">
+              Projects
+            </a>
+          </li>
+          <li>
+            <a
+              href="anime-demo.html"
+              aria-current="page"
+            >
+              Anime Demo
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- =========================
+  MAIN
+  ========================= -->
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-content">
+        <span class="hero-badge">
+          Anime Discovery Platform
+        </span>
+        <h2>
+          Discover Trending Anime
+          With Modern UI &
+          Smart Filtering
+        </h2>
+        <p>
+          Interactive anime dashboard featuring
+          responsive layouts, live search,
+          category filtering,
+          accessibility support,
+          and modern card architecture.
+        </p>
+      </div>
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=1200&auto=format&fit=crop"
+          alt="Anime dashboard interface"
+        />
+      </div>
+    </section>
+    <!-- =========================
+    SEARCH & FILTERS
+    ========================= -->
+    <section
+      class="container"
+      aria-labelledby="anime-title"
+    >
+      <div class="section-heading">
+        <h2 id="anime-title">
+          Explore Anime
+        </h2>
+        <p>
+          Search anime titles and filter by genre.
+        </p>
+      </div>
+      <!-- SEARCH -->
+      <div class="anime-toolbar">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search anime..."
+          aria-label="Search anime"
+        />
+        <!-- FILTERS -->
+        <div class="anime-filters">
+
+          <button
+            class="filter-btn active"
+            data-filter="all"
+          >
+            All
+          </button>
+
+          <button
+            class="filter-btn"
+            data-filter="Action"
+          >
+            Action
+          </button>
+
+          <button
+            class="filter-btn"
+            data-filter="Fantasy"
+          >
+            Fantasy
+          </button>
+
+          <button
+            class="filter-btn"
+            data-filter="Drama"
+          >
+            Drama
+          </button>
+        </div>
+      </div>
+      <!-- ANIME GRID -->
+      <div
+        class="projects-grid"
+        id="anime-grid"
+      >
+        <!-- CARD 1 -->
+        <article
+          class="card anime-card"
+          data-genre="Action"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1541562232579-512a21360020?q=80&w=1200&auto=format&fit=crop"
+            alt="Action anime poster"
+          />
+          <div class="anime-content">
+            <span class="anime-tag">
+              Action
+            </span>
+            <h3>
+              Shadow Blade
+            </h3>
+            <p>
+              High-intensity action anime
+              featuring futuristic battles
+              and elite warriors.
+            </p>
+            <div class="anime-footer">
+              <span>
+                ⭐ 9.1
+              </span>
+              <button class="button">
+                Watch Now
+              </button>
+            </div>
+          </div>
+        </article>
+        <!-- CARD 2 -->
+        <article
+          class="card anime-card"
+          data-genre="Fantasy"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200&auto=format&fit=crop"
+            alt="Fantasy anime poster"
+          />
+          <div class="anime-content">
+            <span class="anime-tag">
+              Fantasy
+            </span>
+            <h3>
+              Mystic Kingdom
+            </h3>
+            <p>
+              Magical kingdoms,
+              mythical creatures,
+              and legendary adventures.
+            </p>
+            <div class="anime-footer">
+              <span>
+                ⭐ 8.8
+              </span>
+              <button class="button">
+                Watch Now
+              </button>
+            </div>
+          </div>
+        </article>
+        <!-- CARD 3 -->
+        <article
+          class="card anime-card"
+          data-genre="Drama"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop"
+            alt="Drama anime poster"
+          />
+          <div class="anime-content">
+            <span class="anime-tag">
+              Drama
+            </span>
+            <h3>
+              Silent Memories
+            </h3>
+            <p>
+              Emotional storytelling
+              with powerful character
+              development and realism.
+            </p>
+            <div class="anime-footer">
+              <span>
+                ⭐ 9.4
+              </span>
+              <button class="button">
+                Watch Now
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrapper">
+      <p>
+        © 2026 Jaswanth Kumar
+      </p>
+      <nav aria-label="Footer Navigation">
+        <ul>
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="projects.html">
+              Projects
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    /* SEARCH */
+    const searchInput =
+      document.getElementById("search-input");
+
+    const animeCards =
+      document.querySelectorAll(".anime-card");
+
+    searchInput.addEventListener(
+      "input",
+      () => {
+
+        const value =
+          searchInput.value.toLowerCase();
+
+        animeCards.forEach(card => {
+
+          const title =
+            card.querySelector("h3")
+            .textContent
+            .toLowerCase();
+
+          card.style.display =
+            title.includes(value)
+              ? "block"
+              : "none";
+
+        });
+
+      }
+    );
+
+    /* FILTERS */
+    const filterButtons =
+      document.querySelectorAll(".filter-btn");
+
+    filterButtons.forEach(button => {
+
+      button.addEventListener(
+        "click",
+        () => {
+
+          document
+            .querySelector(".filter-btn.active")
+            .classList.remove("active");
+
+          button.classList.add("active");
+
+          const filter =
+            button.dataset.filter;
+
+          animeCards.forEach(card => {
+
+            if (
+              filter === "all" ||
+              card.dataset.genre === filter
+            ) {
+
+              card.style.display = "block";
+
+            } else {
+
+              card.style.display = "none";
+
+            }
+
+          });
+
+        }
+      );
+
+    });
+
+  </script>
+
+</body>
+</html>

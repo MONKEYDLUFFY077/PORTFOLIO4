@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>
+    Weather Dashboard | Live Demo
+  </title>
+  <meta
+    name="description"
+    content="Real-time weather dashboard using JavaScript Fetch API and asynchronous REST API integration."
+  />
+
+  <link
+  rel="preconnect"
+  href="https://fonts.googleapis.com"
+/>
+
+<link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin
+/>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+  rel="stylesheet"
+/>
+
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+
+  <a
+    href="#main-content"
+    class="skip-link"
+  >
+    Skip to main content
+  </a>
+
+  <header role="banner">
+    <div class="container header-wrapper">
+      <h1>
+        Weather Dashboard
+      </h1>
+      <nav aria-label="Primary Navigation">
+        <ul>
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="projects.html">
+              Projects
+            </a>
+          </li>
+          <li>
+            <a
+              href="weather-demo.html"
+              aria-current="page"
+            >
+              Live Demo
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="container todo-section">
+      <div class="section-heading">
+        <h2>
+          Real-Time Weather Search
+        </h2>
+        <p>
+          Search weather data using asynchronous
+          JavaScript and REST API requests.
+        </p>
+      </div>
+
+      <form
+        id="weather-form"
+        class="todo-form"
+      >
+        <label for="city-input">
+          Search City
+        </label>
+        <div class="todo-input-group">
+          <input
+            type="text"
+            id="city-input"
+            placeholder="Enter city name..."
+            required
+          />
+          <button type="submit" class="button">
+            Search
+          </button>
+        </div>
+      </form>
+
+      <section
+        id="weather-result"
+        class="projects-grid"
+        aria-live="polite"
+      ></section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrapper">
+      <p>
+        © 2026 Jaswanth Kumar
+      </p>
+    </div>
+  </footer>
+
+  <script src="weather.js"></script>
+</body>
+</html>
